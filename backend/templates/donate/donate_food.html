@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Pukaar Animal Shelter</title>
+    <link rel="stylesheet" href="/backend/static/donation.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='donation.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>🐾 Support Pukaar Animal Shelter 🐾</h1>
+    <p>Your kindness can feed and care for rescued animals.</p>
+</header>
+
+<section class="donation-container">
+    <div class="direct-donation">
+        <h3>📦 Want to Donate Food Directly?</h3>
+        <p>If you prefer to donate food items instead of money, you can drop them off at our shelter or you can contact us and we will pick it up from your location according to our schedule..</p>
+        
+        <p>We appreciate any help you can give! 🙏</p>
+    </div>
+    <div class="donation-box">
+   
+    <h2>🥘 Items We Need (Daily)</h2>
+    
+    <ul>
+        <li>🍚 <strong>Rice</strong> - 200kg per month</li>
+        <li>🌾 <strong>Wheat Flour</strong> - 100kg per month</li>
+        <li>🥦 <strong>Vegetables</strong> - ₹200 per day</li>
+        <li>🥩 <strong>Slaughter Waste</strong> - 4kg per day</li>
+        <li>🥚 <strong>Egg Crates</strong> - 10 crates per month</li>
+        <li>🥛 <strong>Curd</strong> - ₹90 per day</li>
+        <li>🌱 <strong>Soya Granules</strong> - 20kg per month</li>
+        <li>🐶 <strong>Dry Dog Food</strong> - 60kg per month</li>
+    </ul>
+    
+    </div>
+    
+    
+   
+    
+    <!-- Select Donation Type -->
+    <div class="donation-box">
+        <h2> Choose Your Donation Type</h2>
+        <select id="donation-type">
+            <option value="" disabled selected>Select an option</option>
+            <option value="one-dog">Sponsor a Meal for One Dog</option>
+            <option value="all-dogs">Sponsor Meals for All Dogs</option>
+            <option value="custom">General Donation</option>
+        </select>
+    </div>
+
+    <!-- Sponsor a Meal for One Dog (Hidden by Default) -->
+    <div class="donation-box donation-option" id="one-dog-section">
+        <h2>🍖 Sponsor a Meal for a Dog</h2>
+        
+
+        <div class="amount-section">
+            <button type="button" id="decrease-one">-</button>
+            <span id="display-one">100</span>
+            <button type="button" id="increase-one">+</button>
+        </div>
+
+        <p class="meal-text">Sponsoring 1 dog for 1 day</p>
+    </div>
+
+    <!-- Sponsor Meals for All Dogs (Hidden by Default) -->
+    <div class="donation-box donation-option" id="all-dogs-section">
+        <h2>🐕 Sponsor Meals for All Dogs</h2>
+        
+
+        <div class="amount-section">
+            <button type="button" id="decrease-all">-</button>
+            <span id="display-all">1500</span>
+            <button type="button" id="increase-all">+</button>
+        </div>
+
+        <p class="meal-all-text">Sponsoring meals for all dogs for 1 day</p>
+    </div>
+
+    <!-- General Donation (Hidden by Default) -->
+    <div class="donation-box donation-option" id="custom-section">
+        <h2>Donate Any Amount</h2>
+        <input type="number" id="custom-amount" placeholder="Enter amount (₹)">
+    </div>
+
+    <!-- Donor Details Form -->
+    <div class="donation-box">
+        <h2>👤 Donor Details</h2>
+        <input type="text" id="donor-name" placeholder="Your Name" required>
+        <input type="number" id="donor-aadhar" placeholder="Aadhaar (Optional)">
+        <p class="tax-msg">* Donations are tax-deductible only with a valid Aadhaar number.</p>
+    </div>
+
+    <button id="rzp-button1">Donate Now</button>
+</div>
+</section>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="{{ url_for('static', filename='donation.js') }}"></script>
+
+</body>
+</html>

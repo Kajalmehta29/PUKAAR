@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate for Transport | Pukaar Animal Shelter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='donation.css') }}">
+
+</head>
+<body>
+
+<header>
+    <h1>🚛 Transport Donation</h1>
+    <p>Support fuel costs & transportation for rescued animals.</p>
+</header>
+
+<section class="donation-container">
+
+    <!-- Select Donation Type -->
+    <div class="donation-box">
+        <h2> Choose Your Donation Type</h2>
+        <select id="donation-type">
+            <option value="" disabled selected>Select an option</option>
+            <option value="fuel">Donate for Fuel</option>
+            <option value="auto">Donate for Auto Fare</option>
+            <option value="custom">General Transport Donation</option>
+        </select>
+    </div>
+
+    <!-- Fuel Donation Section -->
+    <div class="donation-box donation-option" id="fuel-section">
+        <h2>⛽ Donate for Fuel</h2>
+        <p>Minimum Amount: ₹200</p>
+
+        <div class="amount-section">
+            <button type="button" id="decrease-fuel">-</button>
+            <span id="display-fuel">200</span>
+            <button type="button" id="increase-fuel">+</button>
+        </div>
+
+        <p class="fuel-text">Supporting fuel for rescue operations</p>
+    </div>
+
+    <!-- Auto Fare Donation Section -->
+    <div class="donation-box donation-option" id="auto-section">
+        <h2>🚖 Donate for Auto Fare</h2>
+        <p>Minimum Amount: ₹300</p>
+
+        <div class="amount-section">
+            <button type="button" id="decrease-auto">-</button>
+            <span id="display-auto">300</span>
+            <button type="button" id="increase-auto">+</button>
+        </div>
+
+        <p class="auto-text">Sponsoring for auto fare</p>
+    </div>
+
+    <!-- General Transport Donation -->
+    <div class="donation-box donation-option" id="custom-section">
+        <h2> General Transport Donation</h2>
+        <input type="number" id="custom-amount" placeholder="Enter amount (₹)">
+    </div>
+
+    <!-- Donor Details Form -->
+    <div class="donation-box">
+        <h2>👤 Donor Details</h2>
+        <input type="text" id="donor-name" placeholder="Your Name" required>
+        <input type="number" id="donor-aadhar" placeholder="Aadhaar (Optional)">
+        <p class="tax-msg">* Donations are tax-deductible only with a valid Aadhaar number.</p>
+    </div>
+
+    <button id="rzp-button1">Donate Now</button>
+</section>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="{{ url_for('static', filename='donation_transport.js') }}"></script>
+
+</body>
+</html>

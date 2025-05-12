@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Support Pukaar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='Help_Us.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-content">
+        <h1>PUKAAR</h1>
+        <h2>People United to Kindle Animal Aid and Rehabilitation</h2>
+        <p>Rescuing, rehabilitating, and rehoming animals in need.</p>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li> 
+            <li><a href="/babies">Our Babies</a></li> 
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/Our_Work">Our Work</a></li> 
+            <li><a href="/Help_Us">Donate</a></li> 
+            <li><a href="/adopt">Adopt</a></li>
+            <li><a href="/faq">FAQs</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="donation-section">
+    <h1>Support Pukaar Animal Shelter</h1>
+    <p>Your generosity helps provide food, medical aid, and shelter to our rescued animals. If you want to donate for particular thing you can also do so by given links.</p>
+
+    <div class="donation-container">
+                <!-- Bank Transfer -->
+                <div class="donation-box">
+                    <h3>💳 Bank Transfer</h3>
+                    <p>Bank Name: <b>Bank Of Baroda</b></p>
+                    <p>Account Name: <b>PEOPLE UNITED TO KINDLE ANIMAL AID & REHABILITATION</b></p>
+                    <p>Account No: <b>42770200000334</b></p>
+                    <p>IFSC: <b>BARB0INDDEH</b></p>
+                </div>
+        
+                <!-- UPI Donation -->
+                <div class="donation-box">
+                    <h3>📌 UPI</h3>
+                    <p><b>peopl70557334@barodampay</b></p>
+                    <img src="{{ url_for('static', filename='images/scanner.png') }}" alt="UPI QR Code">
+                </div>
+        
+                <!-- Milaap Donation -->
+                <div class="donation-box">
+                    <h3>📌 Donate via Milaap</h3>
+                    <p>Support us through Milaap!</p>
+                    <a href="https://milaap.org/fundraisers/support-stray-animals-662?utm_medium=more_share&utm_source=app" target="_blank" class="donate-btn">Donate Now</a>
+                </div>
+        
+                <!-- Amazon Wishlist -->
+                <div class="donation-box">
+                    <h3>📌 Amazon Wishlist</h3>
+                    <p>Donate essential supplies directly to us.</p>
+                    <a href="https://www.amazon.in/hz/wishlist/dl/invite/fITU9pi?ref_=wl_share&fbclid=PAZXh0bgNhZW0CMTEAAaZXqSgbLS1GOSxBTZaKOmK8MY6D9kIfsT5bBYe5jDvVwMwr66UKMsaGMZY_aem_PrcPgIAeSaOqr-3z7v5DjQ." target="_blank" class="donate-btn">View Wishlist</a>
+                </div>
+           
+
+        <!-- Vet Care Donation -->
+        <div class="donation-box">
+            <img src="{{ url_for('static', filename='images/vet-care.jpg') }}" alt="Vet Care">
+            <h3>🩺 Donate for Vet Care</h3>
+            <p>Help provide medical treatment to rescued animals.</p>
+            <a href="/donate/vet" class="donate-btn">Donate Now</a>
+        </div>
+
+        <!-- Food Donation -->
+        <div class="donation-box">
+            <img src="{{ url_for('static', filename='images/food-donation.jpg') }}" alt="Food Donation">
+            <h3>🍖 Donate for Food</h3>
+            <p>Ensure nutritious meals for our rescued animals.</p>
+            <a href="/donate/food" class="donate-btn">Donate Now</a>
+        </div>
+
+        <!-- Transport Donation -->
+        <div class="donation-box">
+            <img src="{{ url_for('static', filename='images/transport.jpg') }}" alt="Transport">
+            <h3>🚛 Donate for Transport</h3>
+            <p>Support auto fare & fuel costs for rescue missions.</p>
+            <a href="/donate/taxi" class="donate-btn">Donate Now</a>
+        </div>
+
+        <!-- Construction Support -->
+        <div class="donation-box">
+            <img src="{{ url_for('static', filename='images/construction.jpg') }}" alt="Construction">
+            <h3>🏗️ Donate for Construction</h3>
+            <p>Help us build better shelter facilities for animals.</p>
+            <a href="/donate/construction" class="donate-btn">Donate Now</a>
+        </div>
+
+       
+
+    </div>
+</section>
+
+<footer>
+    <h4>Contact Us:</h4>
+    <p>12 Rameshwar lane, Near Jhanda Sahib Talab, Dehradun, Uttarakhand</p>
+    <p>Phone No.: 7055731213 , 8218503853</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/pukaar._/" target="_blank" style="color: pink; font-size: 22px;">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+    <p>&copy; 2025 Pukaar Animal Shelter</p>
+</footer>
+<button id="backToTop" onclick="scrollToTop()">⬆ Back to Top</button> 
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

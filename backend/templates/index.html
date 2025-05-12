@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUKAAR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+<header class="header">
+    <div class="header-content">
+    <h1>PUKAAR</h1>
+    <h2>People United to Kindle Animal Aid and Rehabilitation</h2>
+    <p>Rescuing, rehabilitating, and rehoming animals in need.</p>
+    </div>
+    <nav>
+        <ul class="nav-links">
+        <li><a href="/">Home</a></li> 
+        <li><a href="/babies">Our Babies</a></li> 
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/Our_Work">Our Work</a></li> 
+        <li><a href="/Help_Us">Donate</a></li> 
+        <li><a href="/adopt">Adopt</a></li>
+        <li><a href="/contact">Contact</a></li>
+        
+        <li><a href="/faq">FAQs</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="intro-section">
+        <div class="intro-content">
+            <p></p>
+            
+            
+        </div>
+    </div>
+   
+    
+
+    <section>
+        <h2>About Us</h2>
+        <p>Pukaar Animal Shelter provides care, medical attention, and shelter to stray and abandoned animals.</p>
+        <p>Pukaar is a Dehradun based small animal welfare trust started by 2 people. It is a <strong>registered animal welfare trust</strong>  which works for the upliftment of the stray dogs and cats.
+         We were established on 2022 since then we have <strong>rescued 300+dogs</strong>.
+        Currently we have over 60 dogs and 3 cats under our care. We don't have an ambulance or a rescue van, we rescue on our two wheelers since many years. We do not have as such team all the work is solely done by two founders of pukaar.
+        From sweeping to coking food to rescuing to vet everything is done by two people.</p>
+        <p>At pukaar we Rescue-Treat-Release and Rehabilitate if needed. But with the best treatment comes the best cost. We don't get any kind of fundings from the government and we totally rely on crowd funding.
+            Please support our cause so that we can continue  our work and give these innocent babies the life they deserve.</p>
+
+    </section>
+    <section class="founder">
+        <h2>Meet Our Founders</h2>
+        
+            
+                <div class="founder-card">
+                    <img src="{{ url_for('static', filename='images/Anjali.jpeg') }}" alt="Founder 1">
+                    
+                    <p><strong>Anjali Mehta</strong>
+                </div>
+                <div class="founder-card">
+                    <img src="{{ url_for('static', filename='images/Abhishek.jpeg') }}" alt="Founder 2">
+                    <p><strong>Abhishek Giri</strong> 
+                </div>
+            
+           
+       
+    </section>
+    <!-- Podcast Section -->
+<section class="podcast-section">
+    <div class="podcast-container">
+        <h2>🎙️ Featured on WalkTalkRadio</h2>
+        <p>Our founders recently joined WalkTalkRadio to discuss animal welfare, rescues, and how Pukaar Animal Shelter is making a difference.  Watch the full episode below!</p>
+        
+        <div class="podcast-player">
+            <iframe width="100%" height="315" 
+                src="https://www.youtube.com/embed/VbwH2AvlBfk" 
+                frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Watch on YouTube Button -->
+        <a href="https://www.youtube.com/watch?v=VbwH2AvlBfk" target="_blank" class="listen-btn">
+            ▶ Watch on YouTube
+        </a>
+        <a href="https://walktalkradio.com/ms-artists/pukaar-foundation/" target="_blank" class="listen-btn">
+            🎙️ Listen to Our Podcast on WalkTalkRadio
+        </a>
+    </div>
+</section>
+
+   
+        <div class="testimonials">
+            <h2>What People Say About Us</h2>
+            <div class="testimonial-container">
+                <button class="arrow left-arrow" onclick="prevTestimonial()">❮</button>
+                
+                <div class="testimonial-slide active">
+                    <p>"Amazing experience! I adopted my pet from here!"</p>
+                    <h4>- Rahul Sharma</h4>
+                </div>
+            
+                <div class="testimonial-slide">
+                    <p>"The team really cares about animals!"</p>
+                    <h4>- Priya Kapoor</h4>
+                </div>
+            
+                <button class="arrow right-arrow" onclick="nextTestimonial()">❯</button>
+            </div>
+            
+                    </div>
+            
+                    
+                    
+                </div>
+            </div>
+            
+            
+            
+</div>    
+    <footer>
+       
+        <div class="contact">
+        <h4>Contact Us:</h4>
+        <p>12 Rameshwar lane, Near Jhanda Sahib Talab, Dehradun, Uttarakhand</p>
+        <p>Phone No.: 7055731213 , 8218503853</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/pukaar._/" target="_blank" style="color:pink; font-size: 22px;">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+        
+        </div>
+        
+        <p>&copy; 2022 Pukaar Animal Shelter</p>
+    </footer>
+    
+    <button id="backToTop" onclick="scrollToTop()">⬆ Back to Top</button>  
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 1,
+        spaceBetween: 1000,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+
+</script>  
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+</html>

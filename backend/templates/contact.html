@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Case</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        .steps {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Report a Case</h1>
+        <p>If you come across an animal in distress, please follow the steps below to report it to us.</p>
+        
+        <ol class="steps">
+            <li><strong>Step 1:</strong> Gather information about the case (location, type of animal, condition, etc.).</li>
+            <li><strong>Step 2:</strong> Take clear pictures or videos if possible.</li>
+            <li><strong>Step 3:</strong> Contact us via our helpline or email.</li>
+            <li><strong>Step 4:</strong> Fill out the online report form available on our website.</li>
+            <li><strong>Step 5:</strong> Stay connected for further updates or required assistance.</li>
+        </ol>
+        
+        <div class="image-container">
+            <h2>Reporting Process Visualization</h2>
+            <img src="{{ url_for('static', filename='reporting_process.png') }}" alt="Reporting Process Visualization">
+        </div>
+    </div>
+</body>
+</html>

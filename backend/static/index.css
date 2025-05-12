@@ -1,0 +1,419 @@
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #4a6741;
+    font-size: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+/* Founders section */
+.founder {
+    text-align: center;
+}
+
+.founder-card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #f8f8f8;
+}
+
+.founder-card:hover {
+    transform: translateY(-5px);
+}
+
+.founder-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #71a95a;
+}
+
+.founder-card p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.podcast-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('images/podcast-bg.jpg') no-repeat center/cover;
+    color: black;
+    position: relative;
+}
+
+.podcast-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#f0f7ee;/* Dark overlay */
+}
+
+.podcast-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.podcast-player {
+    margin: 20px 0;
+}
+
+.listen-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #f4a261;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.listen-btn:hover {
+    background: #e76f51;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #f0f7ee;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #4a6741;
+    margin-bottom: 30px;
+}
+
+.testimonial-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testimonial-content h4 {
+    color: #3b6c27;
+    font-weight: 600;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #71a95a !important;
+}
+
+/* Footer */
+footer {
+    background-color: #4a6741;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        padding: 5px;
+    }
+    
+    .nav-links li {
+        margin: 5px 0;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    .founder-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+.intro-section {
+    position: relative;
+    width: 101%;
+    height: 750px; /* Adjust height as needed */
+    background: url('images/gallery5.jpeg') no-repeat center/cover;
+    display: flex;
+    color: rgb(47, 152, 105);
+    font-family:serif;
+    font-size: 20;
+}
+
+.intro-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     /* Dark overlay for better text visibility */
+}
+
+.intro-content {
+    position: relative;
+    z-index: 1;
+    max-width: 80%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Highlight color for strong text */
+strong {
+    color: #3b6c27;
+}
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #4a6741;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Founders section */
+.founder {
+    text-align: center;
+}
+
+.founder-card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #f8f8f8;
+}
+
+.founder-card:hover {
+    transform: translateY(-5px);
+}
+
+.founder-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #71a95a;
+}
+
+.founder-card p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #f0f7ee;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #4a6741;
+    margin-bottom: 30px;
+}
+
+
+.testimonial-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.testimonial-slide {
+    display: none;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* Back to Top Button Styles */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #4a6741; /* Green shade */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #3b6c27;
+}
+
+#backToTop.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Footer */
+footer {
+    background-color: #4a6741;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+.footer-section{
+    margin-right: 70rem;
+    text-align:center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        padding: 5px;
+    }
+    
+    .nav-links li {
+        margin: 5px 0;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    .founder-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Highlight color for strong text */
+strong {
+    color: #3b6c27;
+}

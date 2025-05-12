@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Pukaar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='faq.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+</head>
+<header class="header">
+    <div class="header-content">
+    <h1>PUKAAR</h1>
+    <h2>People United to Kindle Animal Aid and Rehabilitation</h2>
+    <p>Rescuing, rehabilitating, and rehoming animals in need.</p>
+    </div>
+    <nav>
+        <ul class="nav-links">
+        <li><a href="/">Home</a></li> 
+        <li><a href="/babies">Our Babies</a></li> 
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/Our_Work">Our Work</a></li> 
+        <li><a href="/Help_Us">Donate</a></li> 
+        <li><a href="/adopt">Adopt</a></li>
+        <li><a href="/faq">FAQs</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">How can I donate?</div>
+            <div class="faq-answer">You can donate via UPI/ Bank transfer on our donation page.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Will I get a donation receipt?</div>
+            <div class="faq-answer">Yes! After a successful donation, you will receive a digital receipt.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I adopt a pet?</div>
+            <div class="faq-answer">Visit our "Meet Our Babies" section and fill out an adoption request.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How can I volunteer?</div>
+            <div class="faq-answer">You can apply to volunteer through our "Get Involved" page.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What happens to the donated amount?</div>
+            <div class="faq-answer">Your donated amount goes in paying medical bills,vet visit bills,food,cleaning supplies,etc.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How do I report an abandoned/injured pet?</div>
+            <div class="faq-answer">You can directly call us and send the details through whatsapp number given.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Do you accept in-kind donations (food, toys, blankets)?</div>
+            <div class="faq-answer">Yes we surely accept these kind of donations.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can I visit the shelter before adopting?</div>
+            <div class="faq-answer">Yes, you can visit the shelter any time you want. Just inform us prior so that we can schedule our timings accordingly to avoid any kind of inconvenience.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How can I sponsor a pet?</div>
+            <div class="faq-answer">Yes you can sponsor a pet.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How can I spread awareness about Pukaar?</div>
+            <div class="faq-answer">You can spread awarenessabout us by sharing our instagram account with your friends and telling them about us,our work.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question"></div>
+            <div class="faq-answer"></div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question"></div>
+            <div class="faq-answer"></div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+    <footer>
+        
+        <h4>Contact Us:</h4>
+        <p>12 Rameshwar lane, Near Jhanda Sahib Talab, Dehradun, Uttarakhand</p>
+        <p>Phone No.: 7055731213 , 8218503853</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/pukaar._/" target="_blank" style="color: pink; font-size: 22px;">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+        <p>&copy; 2022 Pukaar Animal Shelter</p>
+    </footer>
+    <button id="backToTop" onclick="scrollToTop()">⬆ Back to Top</button> 
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+</html>

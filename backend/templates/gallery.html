@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Pukaar Animal Shelter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='gallery.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+    
+<header class="header">
+    <div class="header-content">
+    <h1>PUKAAR</h1>
+    <h2>People United to Kindle Animal Aid and Rehabilitation</h2>
+    <p>Rescuing, rehabilitating, and rehoming animals in need.</p>
+    </div>
+    <nav>
+        <ul class="nav-links">
+        <li><a href="/">Home</a></li> 
+        <li><a href="/babies">Our Babies</a></li> 
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/Our_Work">Our Work</a></li> 
+        <li><a href="/Help_Us">Donate</a></li> 
+        <li><a href="/adopt">Adopt</a></li>
+        <li><a href="/faq">FAQs</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+    
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <h1>Our Shelter Gallery</h1>
+        <p>See the beautiful moments of our rescued animals!</p>
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery1.jpeg') }}" alt="image">
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery2.jpeg') }}" alt="image">
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery3.jpeg') }}" alt="image">
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery4.jpeg') }}" alt="image">
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery5.jpeg') }}" alt="image">
+        </div>
+        
+        
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery7.jpeg') }}" alt="image">
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery8.jpeg') }}" alt="image">
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery9.jpeg') }}" alt="image">
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery10.jpeg') }}" alt="image">
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery11.jpeg') }}" alt="image">
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/gallery12.jpeg') }}" alt="image">
+        </div>
+    </section>
+
+    <!-- Lightbox (Modal) -->
+    <div id="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img">
+    </div>
+
+    <script src="{{ url_for('static', filename='gallery.js') }}"></script>
+    <footer>
+        
+        <h4>Contact Us:</h4>
+        <p>12 Rameshwar lane, Near Jhanda Sahib Talab, Dehradun, Uttarakhand</p>
+        <p>Phone No.: 7055731213 , 8218503853</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/pukaar._/" target="_blank" style="color: pink; font-size: 22px;">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+        <p>&copy; 2022 Pukaar Animal Shelter</p>
+    </footer>
+    <button id="backToTop" onclick="scrollToTop()">⬆ Back to Top</button> 
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
