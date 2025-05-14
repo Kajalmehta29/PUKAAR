@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./backend/static/Help_Us.css">
-    <link rel="stylesheet" href="./backend/static/header.css">
+    <link rel="stylesheet" href="../static/Help_Us.css">
+    <link rel="stylesheet" href="../static/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
@@ -51,7 +51,7 @@
                 <div class="donation-box">
                     <h3>📌 UPI</h3>
                     <p><b>peopl70557334@barodampay</b></p>
-                    <img src="{{ url_for('static', filename='images/scanner.png') }}" alt="UPI QR Code">
+                    <img src="../static/images/scanner.png" alt="UPI QR Code">
                 </div>
         
               
@@ -71,7 +71,7 @@
 
         
         <div class="donation-box">
-            <img src="{{ url_for('static', filename='images/vet-care.jpg') }}" alt="Vet Care">
+            <img src="../static/images/vet-care.jpg" alt="Vet Care">
             <h3>🩺 Donate for Vet Care</h3>
             <p>Help provide medical treatment to rescued animals.</p>
             <a href="/donate/vet" class="donate-btn">Donate Now</a>
@@ -79,7 +79,7 @@
 
       
         <div class="donation-box">
-            <img src="{{ url_for('static', filename='images/food-donation.jpg') }}" alt="Food Donation">
+            <img src="..static/images/food-donation.jpg" alt="Food Donation">
             <h3>🍖 Donate for Food</h3>
             <p>Ensure nutritious meals for our rescued animals.</p>
             <a href="/donate/food" class="donate-btn">Donate Now</a>
@@ -87,7 +87,7 @@
 
       
         <div class="donation-box">
-            <img src="{{ url_for('static', filename='images/transport.jpg') }}" alt="Transport">
+            <img src="..static/images/transport.jpg" alt="Transport">
             <h3>🚛 Donate for Transport</h3>
             <p>Support auto fare & fuel costs for rescue missions.</p>
             <a href="/donate/taxi" class="donate-btn">Donate Now</a>
@@ -95,7 +95,7 @@
 
        
         <div class="donation-box">
-            <img src="{{ url_for('static', filename='images/construction.jpg') }}" alt="Construction">
+            <img src="..static/images/construction.jpg" alt="Construction">
             <h3>🏗️ Donate for Construction</h3>
             <p>Help us build better shelter facilities for animals.</p>
             <a href="/donate/construction" class="donate-btn">Donate Now</a>
@@ -119,7 +119,7 @@
 </footer>
 <button id="backToTop" onclick="scrollToTop()">⬆ Back to Top</button> 
 
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="..static/script.js"></script>
 
 </body>
 </html>
