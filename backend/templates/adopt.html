@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopt a Pet | Pukaar Animal Shelter</title>
-    <link rel="stylesheet" href="./backend/static/adopt.css">
-    <link rel="stylesheet" href="./backend/static/header.css">
+    <link rel="stylesheet" href="../static/adopt.css">
+    <link rel="stylesheet" href="../static/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
@@ -35,7 +35,7 @@
     <div class="pet-container">
         {% for pet in pets %}
         <div class="pet-card">
-            <img src="{{ url_for('static', filename=pet.image_path) }}" alt="Pet Image">
+            <img src="..static/pet.image_path" alt="Pet Image">
 
             <h2>{{ pet.pet_name }}</h2>
             <p><strong>Age:</strong> {{ pet.age }}</p>
