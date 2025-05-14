@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUKAAR</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+    <link rel="stylesheet" href="./backend/static/index.css">
+    <link rel="stylesheet" href="./backend/static/header.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -20,14 +20,14 @@
     <nav>
         <ul class="nav-links">
         <li><a href="/">Home</a></li> 
-        <li><a href="/babies">Our Babies</a></li> 
-        <li><a href="/gallery">Gallery</a></li>
-        <li><a href="/Our_Work">Our Work</a></li> 
-        <li><a href="/Help_Us">Donate</a></li> 
-        <li><a href="/adopt">Adopt</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="./backend/templates/babies.html">Our Babies</a></li> 
+        <li><a href="./backend/templates/gallery">Gallery</a></li>
+        <li><a href="./backend/templates/Our_Work">Our Work</a></li> 
+        <li><a href="./backend/templates/Help_Us">Donate</a></li> 
+        <li><a href="./backend/templates/adopt">Adopt</a></li>
+        <li><a href="./backend/templates/contact">Contact</a></li>
         
-        <li><a href="/faq">FAQs</a></li>
+        <li><a href="./backend/templates/faq">FAQs</a></li>
         </ul>
     </nav>
 </header>
@@ -58,12 +58,12 @@
         
             
                 <div class="founder-card">
-                    <img src="{{ url_for('static', filename='images/Anjali.jpeg') }}" alt="Founder 1">
+                    <img src="./backend/static/images/Anjali.jpeg" alt="Founder 1">
                     
                     <p><strong>Anjali Mehta</strong>
                 </div>
                 <div class="founder-card">
-                    <img src="{{ url_for('static', filename='images/Abhishek.jpeg') }}" alt="Founder 2">
+                    <img src="./backend/static/images/Abhishek.jpeg" alt="Founder 2">
                     <p><strong>Abhishek Giri</strong> 
                 </div>
             
@@ -85,7 +85,7 @@
 
        
         <a href="https://www.youtube.com/watch?v=VbwH2AvlBfk" target="_blank" class="listen-btn">
-            ▶ Watch on YouTube
+            ▶️ Watch on YouTube
         </a>
         <a href="https://walktalkradio.com/ms-artists/pukaar-foundation/" target="_blank" class="listen-btn">
             🎙️ Listen to Our Podcast on WalkTalkRadio
@@ -140,7 +140,7 @@
     </footer>
     
     <button id="backToTop" onclick="scrollToTop()">⬆ Back to Top</button>  
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="./backend/static/script.js"></script>
    
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -164,7 +164,7 @@
 
 
 </script>  
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="./backend/static/script.js"></script>
 
 
 </body>
