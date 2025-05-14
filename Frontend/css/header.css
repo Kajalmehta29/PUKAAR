@@ -1,7 +1,7 @@
 
 .header {
     position: relative;
-    background: url('images/bgh.png') no-repeat center/cover;
+    background: url('/Frontend/images/bgh.png ')no-repeat center/cover;
     height: 200px; 
     display: flex;
     flex-direction: column;
