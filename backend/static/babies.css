@@ -1,4 +1,4 @@
-/* Our Babies Page Specific Styles */
+
 body > h1 {
     text-align: center;
     color: #4a6741;
@@ -79,19 +79,19 @@ body > p {
     color: white;
     text-decoration: none;
 }
-/* Back to Top Button Styles */
+
 #backToTop {
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px 15px;
     font-size: 14px;
-    background-color: #4a6741; /* Green shade */
+    background-color: #4a6741;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: none; /* Initially hidden */
+    display: none; 
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -105,7 +105,7 @@ body > p {
     transform: translateY(0);
 }
 
-/* Footer */
+
 footer {
     background-color: #4a6741;
     color: white;
@@ -124,7 +124,7 @@ footer p {
 }
 
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .story {
         flex-direction: column;
@@ -138,7 +138,7 @@ footer p {
     }
 }
 
-/* Highlight for missing image */
+
 .story img[src$="images/"] {
     background-color: #f0f7ee;
     display: flex;

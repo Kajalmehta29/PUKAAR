@@ -1,20 +1,12 @@
 :root {
-    /* Pukaar Shelter Color Palette */
-    --primary-color: #2C5F2D;       /* Deep forest green */
-    --secondary-color: #97BC62;     /* Soft leaf green */
-    --accent-color: #77A146;        /* Muted olive green */
-    --background-color: #F0F4F0;    /* Very light sage green */
-    --text-color: #2C3E50;          /* Dark navy blue */
+
+    --primary-color: #2C5F2D;      
+    --secondary-color: #97BC62;     
+    --accent-color: #77A146;        
+    --background-color: #F0F4F0;    
+    --text-color: #2C3E50;          
 }
 
-/* body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
-} */
 
 body>h1 {
     color: var(--primary-color);
@@ -24,7 +16,7 @@ body>h1 {
 }
 
 
-/* Footer Styling */
+
 footer {
     background-color:var(--primary-color) ;
     color: white;
@@ -40,7 +32,7 @@ footer p{
     color: white;
 }
 
-/* Link Styling */
+
 .guidelines-note {
     text-align: center;
     margin-top: 20px;
@@ -119,7 +111,7 @@ footer p{
     background-color: var(--accent-color);
 }
 
-/* Guidelines Link */
+
 body>p {
     text-align: center;
     margin-top: 2rem;
@@ -136,7 +128,7 @@ body>p a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .pet-container {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

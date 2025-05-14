@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let autoDisplay = document.getElementById("display-auto");
     let donationTypeSelect = document.getElementById("donation-type");
 
-    // Hide all donation sections initially
+    
     let allSections = document.querySelectorAll(".donation-option");
     allSections.forEach(section => section.style.display = "none");
 
-    // Show the selected donation section
+  
     donationTypeSelect.addEventListener("change", function () {
         allSections.forEach(section => section.style.display = "none");
         let selectedOption = this.value;
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Increase/Decrease Fuel Donation Amount
+   
     document.getElementById("increase-fuel").addEventListener("click", function () {
         fuelAmount += 50;
         fuelDisplay.innerText = fuelAmount;
@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Increase/Decrease Auto Fare Donation Amount
     document.getElementById("increase-auto").addEventListener("click", function () {
         autoAmount += 100;
         autoDisplay.innerText = autoAmount;
@@ -44,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Razorpay Payment Integration
+   
     document.getElementById("rzp-button-transport").onclick = function (e) {
         let selectedDonation = document.getElementById("donation-type").value;
         let finalAmount = 0;

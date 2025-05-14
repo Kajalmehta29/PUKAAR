@@ -9,7 +9,7 @@ section {
 
 section h2 {
     color: #4a6741;
-    font-size: 10px;
+    font-size: 40px;
     margin-bottom: 20px;
     text-align: center;
     border-bottom: 2px solid #f0f0f0;
@@ -22,7 +22,7 @@ section p {
     font-size: 1.5rem;
 }
 
-/* Founders section */
+
 .founder {
     text-align: center;
 }
@@ -71,7 +71,7 @@ section p {
     left: 0;
     width: 100%;
     height: 100%;
-    background:#f0f7ee;/* Dark overlay */
+    background:#f0f7ee;
 }
 
 .podcast-container {
@@ -102,7 +102,7 @@ section p {
     background: #e76f51;
 }
 
-/* Testimonials */
+
 .testimonials {
     background-color: #f0f7ee;
     padding: 40px 20px;
@@ -146,25 +146,10 @@ section p {
     color: #71a95a !important;
 }
 
-/* Footer */
-footer {
-    background-color: #4a6741;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 40px;
-}
 
-footer h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
 
-footer p {
-    margin-bottom: 5px;
-}
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
@@ -188,7 +173,7 @@ footer p {
 .intro-section {
     position: relative;
     width: 101%;
-    height: 750px; /* Adjust height as needed */
+    height: 750px;
     background: url('images/gallery5.jpeg') no-repeat center/cover;
     display: flex;
     color: rgb(47, 152, 105);
@@ -203,7 +188,7 @@ footer p {
     left: 0;
     width: 100%;
     height: 100%;
-     /* Dark overlay for better text visibility */
+     
 }
 
 .intro-content {
@@ -214,100 +199,11 @@ footer p {
     font-weight: bold;
 }
 
-/* Highlight color for strong text */
+
 strong {
     color: #3b6c27;
 }
-section {
-    padding: 40px;
-    margin: 20px auto;
-    max-width: 1200px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
-section h2 {
-    color: #4a6741;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 10px;
-}
-
-section p {
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-/* Founders section */
-.founder {
-    text-align: center;
-}
-
-.founder-card {
-    display: inline-block;
-    width: 300px;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    background-color: #f8f8f8;
-}
-
-.founder-card:hover {
-    transform: translateY(-5px);
-}
-
-.founder-card img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 4px solid #71a95a;
-}
-
-.founder-card p {
-    font-size: 1.1rem;
-    text-align: center;
-}
-
-/* Testimonials */
-.testimonials {
-    background-color: #f0f7ee;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.testimonials h2 {
-    color: #4a6741;
-    margin-bottom: 30px;
-}
-
-
-.testimonial-container {
-    position: relative;
-    width: 100%;
-    max-width: 600px; /* Adjust as needed */
-    margin: auto;
-    overflow: hidden;
-    text-align: center;
-}
-
-.testimonial-slide {
-    display: none;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.testimonial-slide.active {
-    display: block;
-}
 
 .arrow {
     position: absolute;
@@ -335,19 +231,19 @@ section p {
     right: 10px;
 }
 
-/* Back to Top Button Styles */
+
 #backToTop {
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px 15px;
     font-size: 14px;
-    background-color: #4a6741; /* Green shade */
+    background-color: #4a6741; 
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: none; /* Initially hidden */
+    display: none; 
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -362,7 +258,7 @@ section p {
 }
 
 
-/* Footer */
+
 footer {
     background-color: #4a6741;
     color: white;
@@ -391,29 +287,3 @@ footer p {
     padding: 20px;
 }
 
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        padding: 5px;
-    }
-    
-    .nav-links li {
-        margin: 5px 0;
-    }
-    
-    section {
-        padding: 20px;
-    }
-    
-    .founder-card {
-        width: 90%;
-        margin: 10px auto;
-    }
-}
-
-/* Highlight color for strong text */
-strong {
-    color: #3b6c27;
-}

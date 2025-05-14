@@ -1,11 +1,11 @@
 
 :root {
-    /* Pukaar Shelter Color Palette */
-    --primary-color: #2C5F2D;       /* Deep forest green */
-    --secondary-color: #97BC62;     /* Soft leaf green */
-    --accent-color: #77A146;        /* Muted olive green */
-    --background-color: #F0F4F0;    /* Very light sage green */
-    --text-color: #2C3E50;          /* Dark navy blue */
+  
+    --primary-color: #2C5F2D;       
+    --secondary-color: #97BC62;   
+    --accent-color: #77A146;      
+    --background-color: #F0F4F0;    
+    --text-color: #2C3E50;          
 }
 
 body {
@@ -88,7 +88,7 @@ button:hover {
     background-color: var(--accent-color);
 }
 
-/* Responsive adjustments */
+
 @media screen and (max-width: 600px) {
     .container {
         padding: 20px;

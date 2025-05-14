@@ -28,10 +28,10 @@ function prevSlide() {
     showSlide(currentIndex - 1);
 }
 
-// Auto-slide every 5 seconds
+
 setInterval(nextSlide, 5000);
 
-    // Show the button when the user scrolls down
+   
     window.onscroll = function () {
         let button = document.getElementById("backToTop");
         if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -41,7 +41,7 @@ setInterval(nextSlide, 5000);
         }
     };
     
-    // Scroll smoothly to the top when clicked
+  
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }

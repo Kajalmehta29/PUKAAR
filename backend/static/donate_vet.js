@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let vetAmount = 500; // Fixed minimum amount
+    let vetAmount = 500; 
     let vetDisplay = document.getElementById("display-vet");
     let customAmountInput = document.getElementById("custom-amount");
 
     document.getElementById("increase-vet").addEventListener("click", function () {
-        vetAmount += 100; // Increase by ₹100
+        vetAmount += 100; 
         vetDisplay.innerText = vetAmount;
     });
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById("rzp-button1").onclick = function (e) {
-        let finalAmount = vetAmount * 100; // Convert to paise for Razorpay
+        let finalAmount = vetAmount * 100; 
 
         let donorName = document.getElementById("donor-name").value;
         let donorAadhar = document.getElementById("donor-aadhar").value;

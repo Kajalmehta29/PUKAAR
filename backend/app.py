@@ -2,13 +2,13 @@ from flask import Flask, render_template, request,send_file, url_for, jsonify, r
 import sqlite3
 from flask_sqlalchemy import SQLAlchemy
 from fpdf import FPDF
-from backend.models import db, Adoption, Donation  # Adjusted import
-from backend.admin.admin import admin  # Adjusted import
+from backend.models import db, Adoption, Donation 
+from backend.admin.admin import admin  
 from flask_migrate import Migrate
 
-app = Flask(__name__, static_folder="static")  # Ensure static folder is served
+app = Flask(__name__, static_folder="static") 
 
-# Configure SQLite Database
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = "supersecretkey"
@@ -82,7 +82,7 @@ def donate():
     
     amount = request.form.get("amount")
     category = request.form.get("category")
-    aadhar = request.form.get("aadhar")  # Get Aadhaar (optional)
+    aadhar = request.form.get("aadhar") 
 
     if not donor_name  or not amount or not category:
         flash("All fields except Aadhaar are required!")
@@ -92,7 +92,7 @@ def donate():
         donor_name=donor_name,
         amount=float(amount),
         category=category,
-        aadhar=aadhar if aadhar else None  # Store only if provided
+        aadhar=aadhar if aadhar else None  
     )
     db.session.add(new_donation)
     db.session.commit()
@@ -100,24 +100,23 @@ def donate():
     flash("Thank you for your donation!")
     return redirect(url_for("thank_you"))
 
-# Route for General Donation
 @app.route('/donate/general', methods=['GET', 'POST'])
 def donate_general():
     return donate('general')
 
-# Thank You Page
+
 @app.route('/thank-you')
 def thank_you():
     return "<h1>Thank you for your donation! 🙏</h1>"
-# Route to display adoptable pets
+
 @app.route("/adopt")
 def adopt():
-    pets = Adoption.query.all()  # Fetch all pets from the database
+    pets = Adoption.query.all() 
     return render_template("adopt.html", pets=pets)
 
-# Run the Application
+
 if __name__ == "__main__":
-    # Ensure database tables exist
+ 
     app.run(debug=True)
 
 

@@ -1,4 +1,4 @@
-from backend.app import app  # Import app from backend folder
+from backend.app import app 
 
 if __name__ == "__main__":
     app.run(debug=True)

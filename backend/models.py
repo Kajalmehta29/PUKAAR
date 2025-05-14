@@ -10,7 +10,7 @@ class Adoption(db.Model):
     gender = db.Column(db.String(10), nullable=False)
     breed = db.Column(db.String(100), nullable=False)
     description = db.Column(db.Text, nullable=False)
-    image_path = db.Column(db.String(300), nullable=False)  # Store file path
+    image_path = db.Column(db.String(300), nullable=False) 
 
     def __repr__(self):
         return f"<Pet {self.pet_name}>"
@@ -19,7 +19,7 @@ class Donation(db.Model):
     donor_name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(120), nullable=False)
     amount = db.Column(db.Float, nullable=False)
-    category = db.Column(db.String(50), nullable=False)  # Category: Food, Vet, Construction, etc.
+    category = db.Column(db.String(50), nullable=False)  
     aadhar = db.Column(db.String(12), nullable=True) 
     timestamp = db.Column(db.DateTime, default=db.func.current_timestamp())
 

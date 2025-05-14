@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate | Pukaar Animal Shelter</title>
     <link rel="stylesheet" href="/backend/static/donation.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='donation.css') }}">
+    
 </head>
 <body>
 
@@ -41,7 +41,7 @@
     
    
     
-    <!-- Select Donation Type -->
+   
     <div class="donation-box">
         <h2> Choose Your Donation Type</h2>
         <select id="donation-type">
@@ -52,7 +52,7 @@
         </select>
     </div>
 
-    <!-- Sponsor a Meal for One Dog (Hidden by Default) -->
+    
     <div class="donation-box donation-option" id="one-dog-section">
         <h2>🍖 Sponsor a Meal for a Dog</h2>
         
@@ -66,7 +66,7 @@
         <p class="meal-text">Sponsoring 1 dog for 1 day</p>
     </div>
 
-    <!-- Sponsor Meals for All Dogs (Hidden by Default) -->
+    
     <div class="donation-box donation-option" id="all-dogs-section">
         <h2>🐕 Sponsor Meals for All Dogs</h2>
         
@@ -80,13 +80,13 @@
         <p class="meal-all-text">Sponsoring meals for all dogs for 1 day</p>
     </div>
 
-    <!-- General Donation (Hidden by Default) -->
+    
     <div class="donation-box donation-option" id="custom-section">
         <h2>Donate Any Amount</h2>
         <input type="number" id="custom-amount" placeholder="Enter amount (₹)">
     </div>
 
-    <!-- Donor Details Form -->
+   
     <div class="donation-box">
         <h2>👤 Donor Details</h2>
         <input type="text" id="donor-name" placeholder="Your Name" required>

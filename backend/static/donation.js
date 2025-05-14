@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get elements
+   
     const donationType = document.getElementById('donation-type');
     const oneDogSection = document.getElementById('one-dog-section');
     const allDogsSection = document.getElementById('all-dogs-section');
     const customSection = document.getElementById('custom-section');
     
-    // Amount display and controls
+   
     const displayOne = document.getElementById('display-one');
     const displayAll = document.getElementById('display-all');
     const increaseOne = document.getElementById('increase-one');
@@ -14,29 +14,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const decreaseAll = document.getElementById('decrease-all');
     const customAmount = document.getElementById('custom-amount');
     
-    // Donor details
+    
     const donorName = document.getElementById('donor-name');
     const donorAadhar = document.getElementById('donor-aadhar');
     const donateButton = document.getElementById('rzp-button1');
     
-    // Meal text
+   
     const mealText = document.querySelector('.meal-text');
     const mealAllText = document.querySelector('.meal-all-text');
     
-    // Default values
+    
     let oneDogAmount = 100;
     let allDogsAmount = 1500;
     let dayCountOne = 1;
     let dayCountAll = 1;
     
-    // Show relevant section based on donation type
+    
     donationType.addEventListener('change', function() {
-        // Hide all sections first
+       
         oneDogSection.classList.remove('active');
         allDogsSection.classList.remove('active');
         customSection.classList.remove('active');
         
-        // Show selected section
+       
         if (this.value === 'one-dog') {
             oneDogSection.classList.add('active');
         } else if (this.value === 'all-dogs') {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // One dog amount controls
+    
     increaseOne.addEventListener('click', function() {
         dayCountOne++;
         oneDogAmount = 100 * dayCountOne;
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // All dogs amount controls
+ 
     increaseAll.addEventListener('click', function() {
         dayCountAll++;
         allDogsAmount = 1500 * dayCountAll;
@@ -80,18 +80,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Razorpay integration
+    
     donateButton.addEventListener('click', function() {
         let amount = 0;
         let description = '';
         
-        // Validate form
+       
         if (!donorName.value) {
             alert('Please enter your name');
             return;
         }
         
-        // Determine amount based on donation type
+      
         if (donationType.value === 'one-dog') {
             amount = oneDogAmount;
             description = `Sponsoring meals for 1 dog for ${dayCountOne} day${dayCountOne > 1 ? 's' : ''}`;
@@ -110,18 +110,18 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Razorpay options
+     
         const options = {
-            key: 'YOUR_RAZORPAY_KEY', // Replace with your actual key
-            amount: amount * 100, // Razorpay takes amount in paisa
+            key: 'YOUR_RAZORPAY_KEY',
+            amount: amount * 100, 
             currency: 'INR',
             name: 'Pukaar Animal Shelter',
             description: description,
-            image: '/logo.png', // Replace with your logo path
+            image: '/logo.png', 
             handler: function(response) {
                 alert('Payment Successful! Thank you for your donation.');
-                // You can add code here to handle successful payments
-                // e.g., sending data to your server
+               
+           
             },
             prefill: {
                 name: donorName.value,

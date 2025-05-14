@@ -83,19 +83,19 @@ body>h1:after {
     border-radius: 10px;
     width: 150px;
 }
-/* Back to Top Button Styles */
+
 #backToTop {
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px 15px;
     font-size: 14px;
-    background-color: #4a6741; /* Green shade */
+    background-color: #4a6741; 
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: none; /* Initially hidden */
+    display: none; 
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -108,7 +108,7 @@ body>h1:after {
     opacity: 1;
     transform: translateY(0);
 }
-/* Footer Styles */
+
 footer {
     background-color: #4a6741;
     color: white;
@@ -136,7 +136,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .work-container {
         grid-template-columns: 1fr;

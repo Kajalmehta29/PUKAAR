@@ -7,7 +7,7 @@ body {
   padding: 0;
 }
 
-/* Header Styling */
+
 header {
   background-color: #4a6741;
   color: white;
@@ -29,7 +29,7 @@ header p {
   color: rgba(255,255,255,0.9);
 }
 
-/* Donation Container */
+
 .donation-container {
   max-width: 800px;
   margin: 2rem auto;
@@ -50,14 +50,14 @@ header p {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Direct Donation Section */
+
 .direct-donation {
   background-color: #f0f4f0;
   border-left: 5px solid #4a6741;
   padding: 1rem;
 }
 
-/* Donation Items List */
+
 .donation-box ul {
   list-style-type: none;
   padding: 0;
@@ -80,7 +80,7 @@ header p {
   color: #4a6741;
 }
 
-/* Donation Type Selection */
+
 #donation-type {
   width: 100%;
   padding: 0.75rem;
@@ -91,7 +91,7 @@ header p {
   color: #4a6741;
 }
 
-/* Amount Section */
+
 .amount-section {
   display: flex;
   justify-content: center;
@@ -126,7 +126,7 @@ header p {
   color: #555;
 }
 
-/* Input Styles */
+
 input[type="text"], 
 input[type="number"] {
   width: 100%;
@@ -144,7 +144,7 @@ input[type="number"] {
   margin-top: -0.5rem;
 }
 
-/* Donate Button */
+
 #rzp-button1 {
   display: block;
   width: 100%;
@@ -176,7 +176,7 @@ input[type="number"] {
   transform: scale(1.02);
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
   .donation-container {
       padding: 0 0.5rem;
@@ -191,7 +191,7 @@ input[type="number"] {
   }
 }
 
-/* Donation Option Visibility */
+
 .donation-option {
   display: none;
 }
