@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUKAAR</title>
-    <link rel="stylesheet" href="./backend/static/index.css">
-    <link rel="stylesheet" href="./backend/static/header.css">
+    <link rel="stylesheet" href="./Frontend/css/header.css">
+    <link rel="stylesheet" href="./Frontend/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -20,14 +20,13 @@
     <nav>
         <ul class="nav-links">
         <li><a href="/">Home</a></li> 
-        <li><a href="./backend/templates/babies.html">Our Babies</a></li> 
-        <li><a href="./backend/templates/gallery.html">Gallery</a></li>
-        <li><a href="./backend/templates/Our_Work.html">Our Work</a></li> 
-        <li><a href="./backend/templates/Help_Us.html">Donate</a></li> 
-        <li><a href="./backend/templates/adopt.html">Adopt</a></li>
-        <li><a href="./backend/templates/contact.html">Contact</a></li>
-        
-        <li><a href="./backend/templates/faq.html">FAQs</a></li>
+        <li><a href="./Frontend/html/babies.html">Our Babies</a></li> 
+        <li><a href="./Frontend/html/gallery.html">Gallery</a></li>
+        <li><a href="./Frontend/html/Our_Work.html">Our Work</a></li> 
+        <li><a href="./Frontend/html/Help_Us.html">Donate</a></li> 
+        <li><a href="./Frontend/html/adopt.html">Adopt</a></li>
+        <li><a href="./Frontend/html/contact.html">Contact</a></li>
+        <li><a href="./Frontend/html/faq.html">FAQs</a></li>
         </ul>
     </nav>
 </header>
@@ -58,12 +57,12 @@
         
             
                 <div class="founder-card">
-                    <img src="./backend/static/images/Anjali.jpeg" alt="Founder 1">
+                    <img src="./Frontend/images/Anjali.jpeg" alt="Founder 1">
                     
                     <p><strong>Anjali Mehta</strong>
                 </div>
                 <div class="founder-card">
-                    <img src="./backend/static/images/Abhishek.jpeg" alt="Founder 2">
+                    <img src="./Frontend/images/Abhishek.jpeg" alt="Founder 2">
                     <p><strong>Abhishek Giri</strong> 
                 </div>
             
@@ -140,7 +139,7 @@
     </footer>
     
     <button id="backToTop" onclick="scrollToTop()">⬆ Back to Top</button>  
-    <script src="./backend/static/script.js"></script>
+    <script src="./Frontend/js/script.js"></script>
    
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -162,9 +161,14 @@
         },
     });
 
-
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
 </script>  
-<script src="./backend/static/script.js"></script>
+<script src="./Frontend/js/script.js"></script>
 
 
 </body>

@@ -1,0 +1,137 @@
+
+body {
+    
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h2 {
+    text-align: center;
+    color: #4a6741;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    font-size: 1.8rem;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    color: #3b6c27;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    background-color: #f0f7ee;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #e1f0d9;
+}
+
+.faq-question::after {
+    content: "▼";
+    position: absolute;
+    right: 15px;
+    color: #71a95a;
+    font-size: 0.8rem;
+}
+
+.faq-answer {
+    padding: 15px;
+    display: none;
+    color: #555;
+    line-height: 1.6;
+    background-color: #fafafa;
+    border-radius: 0 0 5px 5px;
+    margin-top: 2px;
+    border-left: 3px solid #71a95a;
+}
+
+
+.faq-item:empty,
+.faq-item:has(.faq-question:empty) {
+    display: none;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #4a6741; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #3b6c27;
+}
+
+#backToTop.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    background-color: #4a6741;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .faq-container {
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    .faq-question {
+        font-size: 1rem;
+        padding: 8px 35px 8px 10px;
+    }
+    
+    .faq-answer {
+        padding: 10px;
+    }
+}
