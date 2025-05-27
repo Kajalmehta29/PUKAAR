@@ -174,7 +174,7 @@ section p {
     position: relative;
     width: 101%;
     height: 750px;
-    background: url('../images/gallery5.jpeg') no-repeat center/cover;
+    background: url('../images/intro.jpeg') no-repeat center/cover;
     display: flex;
     color: rgb(47, 152, 105);
     font-family:serif;
